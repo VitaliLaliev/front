@@ -1,6 +1,26 @@
 .header{
-	background: red;
+	
+.continent{
+	max-width: 1140px;
+	margin: 0 auto;
+	height: 51px;
+	@extend %navigation-button-position;
 }
-h2{
-	color: green;
+
+&__contact-information{
+	display: flex;
 }
+
+&__contact-information a:not(:first-child){
+	margin-left: 30px;
+	}
+
+&__contact-information a{
+	@include style-navigation-button(#1C294DCC ,400,);
+	}
+a img{
+	margin:0 3px;
+}
+.horizontal-line{
+	border-bottom: 1px solid #DFE0E1;
+}}

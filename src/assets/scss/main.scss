@@ -1,5 +1,6 @@
 /* mixins */
 @import 'base/mixins.scss';
+@import 'base/extends.scss';
 
 /* base */
 @import 'base/fonts';
@@ -14,6 +15,8 @@
 @import '@b/g-checkbox/g-checkbox.scss';
 @import '@b/g-button/g-button.scss';
 @import '@b/g-radio/g-radio.scss';
+@import '@b/header/header.scss';
+
 /* @import 'blocks/component/component'; */
 
 /* pages */
@@ -43,4 +46,5 @@ body
 {
 	background-image: url(#{$img}/logo.png);
 	background-repeat: no-repeat;
+	
 }
