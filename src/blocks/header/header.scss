@@ -1,26 +1,81 @@
-.header{
+
+.header {
+	font-family: 'roboto';
+	src: url(#{$fonts}/roboto/roboto-Regular.ttf);
 	
-.continent{
+// $font-famaily-base
+	&__container
+	{
+		max-width: 1140px;
+		margin: 0 auto;
+		height: 51px;
+		@extend %space-between-position;
+	}
+
+	&__address {display: flex;}
+
+	&__address a:not(:first-child) {margin-left: 32px;}
+
+	&__address a {@include style-navigation-button(#1C294DCC, 400, );}
+
+
+	&__contact-information 
+	{
+		display: flex;
+		margin-left: 20px;
+	}
+
+	&__contact-information a:not(:first-child) {margin-left: 37px;}
+
+	&__contact-information a {@include style-navigation-button(#1C294DCC, 400, );}
+
+	a img {margin: 0 5px 0 0;}
+
+	.horizontal-line {border-bottom: 1px solid #DFE0E1;}
+}
+
+nav 
+{
 	max-width: 1140px;
 	margin: 0 auto;
-	height: 51px;
-	@extend %navigation-button-position;
-}
 
-&__contact-information{
-	display: flex;
+	.nav__container 
+	{
+		@extend %space-between-position;
+		margin-top: 14px;
+		margin-bottom: 14px;
 }
-
-&__contact-information a:not(:first-child){
-	margin-left: 30px;
+.nav__container-logo
+{
+	padding-top: 5px;
+}
+	.nav__navigation-menu-search
+	 {
+		display: flex;
+		align-items: center;
 	}
 
-&__contact-information a{
-	@include style-navigation-button(#1C294DCC ,400,);
+	.nav__navigation-menu-search a:not(:first-child) {margin-left: 30px;}
+
+	.nav__navigation-menu-search a {@include style-navigation-button(#1C294D, 400, );}
+	.nav__navigation-menu-search a img {width: 20px;}
+	.g-input-search 
+	{
+		@extend %alignment-line;
+		margin-left: 30px;
+		position: relative;
+
+		button 
+		{
+		position: absolute;
+		right: -119px;
+		}
 	}
-a img{
-	margin:0 3px;
+	.nav__navigation-menu {display: flex;}
+	.nav__navigation-menu a:not(:first-child) {margin-left: 21px;}
+
+	.nav__navigation-menu a {@include style-navigation-button(#1C294D, 400, );}
+
+	.nav__navigation-menu a:first-of-type img {margin-left: 0;}
+	.nav__navigation-menu :nth-child(4) {@include style-navigation-button(#FF283D, 400, );}
 }
-.horizontal-line{
-	border-bottom: 1px solid #DFE0E1;
-}}

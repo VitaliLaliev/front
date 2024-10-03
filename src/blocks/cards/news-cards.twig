@@ -1,0 +1,61 @@
+<div class="news">
+
+	<div class="new-arrivals__title">
+
+		<h2>Новости</h2>
+	
+		<div class="new-arrivals__title__button-Swipe">
+			<button class="g-button__Swipe-right"><img src="./svg/button-Swipe-right.svg" alt=""></button>
+			<button class="g-button__Swipe-left"><img src="./svg/button-Swipe-left.svg" alt=""></button>
+			</div>
+	</div>
+
+{% set products = [
+{
+"image": "./img/news-img-1.png",
+"data": "16 июня 2020",
+"description": "Бесплатный онлайн-семинар. Доктрина <br> stare decisis: борьба за прецедент в рос...",
+"info": "18 июня в «Клубе цивилистов» пройдет  бесплатный онлайн-семинар по проблематике  судебного прецедента.
+Мероприятие приуроч...",
+"border_cards":"news__border_cards"
+},
+{
+
+"image": "./img/news-img-2.png",
+"data": "16 июня 2020",
+"description": "Бесплатный онлайн-семинар. Доктрина <br> stare decisis: борьба за прецедент в рос...",
+"info": "18 июня в «Клубе цивилистов» пройдет  бесплатный онлайн-семинар по проблематике  судебного прецедента.
+Мероприятие приуроч...",
+"border_cards":"news__border_cards"
+},
+{
+"image": "./img/news-img-3.png",
+"data": "16 июня 2020",
+"description": "Бесплатный онлайн-семинар. Доктрина <br> stare decisis: борьба за прецедент в рос...",
+"info": "18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике  судебного прецедента.
+Мероприятие приуроч...",
+"border_cards":"news__border_cards"
+}
+] %}
+
+
+<div class="news__cards-news">
+
+{% for product in products %}
+
+<div class="{{ product.border_cards }}">
+<div class="news__card">
+	<img src="{{ product.image}}" alt="">
+
+	<div class="news__card-info">
+		<p class="news__data-text" >{{product.data}}</p>
+		<p class="news__description-text" >{{product.description}}</p>
+		<p class="news__info-text" >{{product.info}}</p>
+</div>
+	<button class="g-button__read">Читать</button> 
+</div>
+</div>
+
+{% endfor %}
+</div>
+</div>

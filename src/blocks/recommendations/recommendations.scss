@@ -1,0 +1,182 @@
+.recommendations 
+{
+	max-width: 1140px;
+	margin: 49px auto 0;
+	display: flex;
+
+	&__offer 
+	{
+		max-width: 750px;
+	}
+
+	&__offer__delivery-and-discount 
+	{
+		display: flex;
+		align-items: center;
+
+		&__delivery 
+		{
+			width: 360px;
+			height: 140px;
+			border-radius: 5px;
+			background-color: #6D378F;
+			margin-top: 23px;
+
+
+			&__vector 
+			{
+				@extend %alignment-line;
+				padding-left: 10px;
+				padding-top: 23px;
+				padding-bottom: 7px;
+				background: url(#{$img}/Vector.png) no-repeat;
+				background-position: 13px 32px;
+
+
+				p 
+				{
+
+					color: #ffff;
+					letter-spacing: 0.5px;
+					font-size: 19px;
+					line-height: 1.3;
+					margin-bottom: 32px;
+					margin-left: 4px;
+				}
+
+				img 
+				{
+					margin-right: 15px;
+					margin-top: -9px;
+					margin-bottom: 17px;
+
+				}
+			}
+		}
+
+		&__discount 
+		{
+			width: 360px;
+			height: 140px;
+			border-radius: 5px;
+			background: #FFD8EF;
+			margin-top: 23px;
+			margin-left: 31px;
+
+
+			&__vector 
+			{
+				background: url(#{$svg}/Vector-discount.svg) no-repeat;
+				background-position: 45px 82px;
+				@extend %alignment-line;
+				padding-left: 9px;
+				padding-top: 21px;
+
+				p 
+				{
+
+					color: rgba(28, 41, 77, 0.8);
+					font-family: Gosha Sans;
+					font-size: 21px;
+					font-weight: 600;
+					text-align: left;
+					line-height: 1.27;
+					letter-spacing: 1px;
+					margin-left: 3px;
+					margin-bottom: 26px;
+
+				}
+
+				img 
+				{
+					margin-right: 15px;
+					margin-bottom: 17px;
+					margin-top: -4px
+				}
+			}
+
+		}
+	}
+
+	&__book 
+	{
+		max-width: 360px;
+		margin: 0 auto;
+		position: relative;
+
+		.product-card__image 
+		{
+			margin: 65px auto 14px auto;
+			display: block;
+			padding-left: 30px;
+		}
+
+		.name_block
+		{
+			position: absolute;
+			top: -56px;
+    		left: 10px;
+
+		}
+
+		.product-card__timer
+		{
+			position: absolute;
+			top: -56px;
+			left: 262px;
+			font-size: 12px;
+			font-weight: 500;
+			color: rgb(255, 122, 0);
+			text-align: center;
+			line-height: 2.5;
+			width: 68px;
+			height: 25px;
+			background-color: rgba(255, 122, 0, 0.15);
+			border-radius: 5px;
+		}
+
+		.product-card__info
+		{
+			margin-left: 9px;
+		}
+
+		.product-card__title
+		{
+			margin-bottom: 0;
+		}
+
+		.product-card__description
+		{
+			letter-spacing: -0.4px;
+			margin-top: 5.5px;
+			margin-bottom: 0;
+			padding-top: 0;
+		}
+
+		.product-card__author
+		{
+			margin-top: 5.6px;
+			margin-bottom: 0;
+			padding-top: 0;
+		}
+
+		.product-card__price-and-discount
+		{
+			margin-bottom: 0;
+			margin-top: -9.5px;
+			font-weight: 700;
+		}	
+
+		.product-card__buy-button-and-deferred
+		{
+			margin-top: -7px;
+		}
+		
+		.g-button__buy-button div p 
+		{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+}

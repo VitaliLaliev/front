@@ -30,3 +30,13 @@
 	font-weight:$weight;
 	@extend %button-text-size;
 }
+@mixin style-button-and-icon-search-dynamic($width,$background,$color,$border,$radius){
+	width: $width;
+background-color: $background;
+color: $color;
+border: $border;
+border-radius: $radius 5px 5px $radius;
+@extend %style-button-and-icon-search-static;
+}
+
+

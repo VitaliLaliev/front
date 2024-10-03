@@ -1,15 +1,55 @@
 <header class="header">
-	<div class="continent">
-		{# {% include "@assets/svg/Location-icons.svg" %} #}
-	<div class="header__contact-information">
-		<a href=""> <img src="./svg/Location-icons.svg" alt=""> Москва </a>
-		<a href=""> <img src="./svg/box.svg" alt=""> Доставка и оплатат </a>
-		<a href=""> <img src="./svg/pointer.svg" alt=""> адрес и часы работы </a>
+	<div class="header__container">
+
+		<div class="header__address">
+			<a href=""> <img src="./svg/Location-icons.svg" alt=""> Москва </a>
+			<a href=""> <img src="./svg/box.svg" alt=""> Доставка и оплата </a>
+			<a href=""> <img src="./svg/pointer.svg" alt=""> Адрес и часы работы </a>
+		</div>
+		<div class="header__contact-information">
+			<a href=""> <img src="./svg/letter.svg" class="header__email" alt=""> market@estatut.ru </a>
+			
+			<a href="8(968)660-65-50" class="header__nunber" >
+				 <img src="./svg/telephone-receiver.svg"  alt=""> 
+				8 (968) 660-65-50 
+				<img src="./svg/notification.svg" alt=""> 
+			</a>
+			
+		</div>
 	</div>
-	<div class="header__contact-information">
-		<a href=""> <img src="./svg/letter.svg" alt=""> market@estatut.ru </a>
-		<a href=""> <img src="./svg/telephone-receiver.svg" alt=""> 8 (968) 660-65-50 <img src="./svg/notification.svg" alt=""></a>
-	</div> 
-</div>
-<div class="horizontal-line"></div>
+	<div class="horizontal-line"></div>
+
+	<nav>
+		<div class="nav__container">
+
+			<div class="nav__navigation-menu-search">
+
+				<div class="nav__container-logo">
+					<img src="./svg/logo.svg" alt="" class="nav__logo">
+				</div>
+
+				<label class="g-input-search">
+					<input name="search" class="g-input-header-search" placeholder="Автор, название, ISBN"
+						type="search">
+					<button class="g-button-and-icon-search"><img src="./svg/search.svg" alt=""> Искать</button>
+				</label>
+			</div>
+
+			<div class="nav__navigation-menu-search">
+				<a href=""> <img src="./svg/deferred-icon.svg" alt=""> Отложено </a>
+				<a href=""> <img src="./svg/Login.svg" alt="">Войти</a>
+				<a href="" class="nav__container "> <div></div><img src="./svg/shopping-cart.svg" alt=""> Корзина </a>
+			</div>
+
+		</div>
+		<div class="nav__navigation-menu">
+			<a href=""><img src="./svg/catalog.svg" alt="">Каталог</a>
+			<a href=""><img src="" alt="">Авторы</a>
+			<a href=""><img src="" alt="">Новинки</a>
+			<a href=""><img src="./svg/discounts.svg" alt="">Скидки</a>
+			<a href=""><img src="" alt="">Партнёрам</a>
+			<a href=""><img src="" alt="">Мы</a>
+		</div>
+	</nav>
+
 </header>

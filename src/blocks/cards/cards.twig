@@ -1,0 +1,142 @@
+<div class="cards">
+
+	{# масив для генерации карточек #}
+
+	{% set products = [
+	{
+	"offer_color":"product-card__offer ",
+	"offer": "Бестселлер",
+	"promotion": "1+1=3",
+	"image": "./img/book-north.png",
+	"title": "Корпоративное право",
+	"description": "Инвестирование: способы,<br> риски, субъекты : монография",
+	"author": "Майфат А.В.",
+	"price": "4 450",
+	"price_class":"product-card__price",
+	"grade_class":"product-card__grade-and-recommend__grade-star-yellow",
+	"grade_svg": "./svg/star-yellow.svg",
+	"discount": null,
+	"favorable": null,
+	"border_cards":"cards_border_none"
+	},
+	{
+	"offer_color":"product-card__offer-color" ,
+	"offer": "новинка",
+	"promotion": null,
+	"image": "./img/book-vitya.png",
+	"title": "Договорное право",
+	"description": "Договор коммерческой<br>концессии (франчайзинг). Граж...",
+	"author": "Багдасарян А.Ф.",
+	"price": "372",
+	"price_class":"product-card__price",
+	"grade_class":"product-card__grade-and-recommend__grade-star-orange",
+	"grade_svg": "./svg/star-orange.svg",
+	"discount": null,
+	"favorable": null,
+	"border_cards":"border_cards"
+	},
+	{
+	"offer_color":null,
+	"offer": null,
+	"promotion": null,
+	"image": "./img/book-bejin.png",
+	"title": "Договорное право",
+	"description": "Договор коммерческой<br>концессии (франчайзинг). Граж...",
+	"author": "Багдасарян А.Ф.",
+	"price": "984",
+	"price_class":"product-card__price-color-red",
+	"discount": "1 284 ₽",
+	"favorable": "Выгода 300 ₽",
+	"grade_class":"product-card__grade-and-recommend__grade-star-orange",
+	"grade_svg": "./svg/star-orange.svg",
+	"border_cards":"border_cards"
+	},
+	{
+	"offer_color":"product-card__offer ",
+	"offer": "Бестселлер",
+	"promotion": "1+1=3",
+	"image": "./img/book-north.png",
+	"title": "Корпоративное право",
+	"description": "Инвестирование: способы,<br> риски, субъекты : монография",
+	"author": "Майфат А.В.",
+	"price": "4 450",
+	"price_class":"product-card__price",
+	"grade_class":"product-card__grade-and-recommend__grade-star-orange",
+	"grade_svg": "./svg/star-orange.svg",
+	"discount": null,
+	"favorable": null,
+	"border_cards":"border_cards"
+	}
+	] %}
+
+	{% for product in products %}
+
+	<div class="{{ product.border_cards }}">
+		<div class="product-card">
+
+			<img src="{{ product.image }}" alt="{{ product.title }}" class="product-card__image">
+
+			<div class="product-card__info">
+				<p class="product-card__title">{{ product.title }}</p>
+				<p class="product-card__description">{{ product.description | raw }}</p>
+				<p class="product-card__author">{{ product.author }}</p>
+
+				<div class="product-card__price-and-discount">
+
+					<p class="{{product.price_class}}"> {{ product.price }} ₽</p>
+
+
+					{% if product.discount %}
+					<p class="product-card__discount">{{ product.discount }}</p>
+
+					<img src="./svg/diagonal-line.svg" alt="">
+
+
+					{% endif %}
+					{% if product.favorable %}
+					<p class="product-card__favorable">{{ product.favorable }}</p>
+					{% endif %}
+
+				</div>
+
+
+				<div class="product-card__grade-and-recommend">
+
+					<div class="{{ product.grade_class }}">
+						<img src="{{product.grade_svg}}" alt="" class="product-card__grade-svg">
+						<p class="product-card__grade-p"> 4.9</p>
+					</div>
+
+					<div class="product-card__recommend">
+						<img src="./svg/recommend.svg" alt="" class="product-card__recommend-svg">
+						<p class="product-card__recommend-p">89% рекомендуют</p>
+					</div>
+
+				</div>
+
+				<div class="product-card__buy-button-and-deferred">
+
+					<a href="#" class="g-button__buy-button">
+						<div><img src="./svg/orange-basket.svg" alt="">
+							<p> В корзину</p>
+						</div>
+					</a>
+
+					<button class="g-button__deferred deferred-margin"> <img src="./svg/deferred-icon.svg"
+							alt=""></button>
+
+				</div>
+
+
+				{% if product.offer_color %}
+				<p class="{{product.offer_color}}">{{ product.offer }}</p>
+				{% endif %}
+
+				{% if product.promotion %}
+				<p class="product-card__promotion">{{ product.promotion }}</p>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>

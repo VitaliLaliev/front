@@ -1,0 +1,55 @@
+.new-arrivals
+ {
+	font-family: 'roboto';
+	src: url(#{$fonts}/roboto/roboto-Regular.ttf);
+	max-width: 1140px;
+	margin: 30px auto 0;
+	box-sizing:border-box;
+
+	&__title
+	 {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 1px;
+
+
+		h2
+		 {
+			font-family: Roboto;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 25px;
+			text-align: left;
+			color: #1C294D;
+			padding: 17px 0 0 25px;
+		}
+
+		&__button-Swipe
+		 {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			margin-right: 25px;
+			margin-top: 9px;
+	
+		}
+	}
+
+	&__show-all
+	{
+		width: 1140px;
+		text-align: center;
+
+	}
+
+	&__show-all-button
+	{
+		
+		margin-top: 9px;
+		font-size: 14px;
+		font-weight: 500;
+		color: rgba(28, 41, 77, 1);
+		border: none;
+		
+	}
+}

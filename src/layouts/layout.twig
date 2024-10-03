@@ -18,8 +18,15 @@
 </head>
 <body>
 	{% include '@blocks/header/header.twig' %}
+	{% include '@blocks/recommendations/recommendations.twig' %}
+	{% include '@blocks/new-arrivals/new-arrivals.twig' %}
+	{% include '@blocks/subscription/subscription.twig' %}
+	{% include '@blocks/coming-soon/coming-soon.twig' %}
+	{% include '@blocks/cards/advantage-cards.twig' %}
+	{% include '@blocks/cards/news-cards.twig' %}
+	{% include '@blocks/get-discount/get-discount.twig' %}
 	<div class="site-content">
-		{% block page %}{% endblock %}
+		{% block page %} {% endblock %}
 	</div>
 	{% include '@blocks/footer/footer.twig' %}
 </body>

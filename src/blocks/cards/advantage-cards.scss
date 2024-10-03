@@ -1,0 +1,86 @@
+.advantage-cards
+{
+	font-family: 'roboto';
+	width: 1141px;
+	margin: 40px auto 0;
+	display: flex;
+	justify-content: space-between;
+	
+	
+	p {margin:0 0 ;}
+
+	img
+	{
+		position: absolute;
+		top: 35px;
+		left: 0;
+		
+	}
+
+	&__card {display: flex;}
+	&__card-position
+	{
+		width: 263px;
+		height: 150px;
+		display: flex;
+		justify-content: space-around;
+    	align-items: center;
+		position: relative;
+	}
+	
+	&__card-width
+	{
+		width: 0;
+	}
+	
+	
+	&__title-text
+	{
+		font-size: 16px;
+		font-weight: 700;
+		// line-height: 150;
+		color: rgba(28, 41, 77, 1);
+	}
+	&__description-text 
+	{
+		font-size: 12px;
+		font-weight: 400;
+		color: #727272;
+		line-height: 1.9;
+	}
+
+	&__card:nth-child(2)
+	{
+
+		img
+	{
+		position: absolute;
+		top: 40px;
+		left: 0;
+		
+	}
+	}
+	
+	&__card:nth-child(4)
+	{
+
+		img
+	{
+		position: absolute;
+		top: 26px;
+    	left: 1px;
+		
+	}
+	}
+	&__card:nth-child(3)
+	{
+		.advantage-cards__offer-text
+		{
+			margin: 0px 0 0 32px;
+    		letter-spacing: -0.4px;
+    
+		}
+	}
+	
+}
+

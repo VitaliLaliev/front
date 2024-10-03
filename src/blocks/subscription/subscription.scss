@@ -1,0 +1,58 @@
+.subscription
+{
+	font-family: "roboto";
+    background: rgb(2, 136, 209);
+    border-radius: 5px;
+    display: flex;
+    width: 1141px;
+    height: 105px;
+    margin: 38px auto 0;
+    justify-content: center;
+	align-items: center;
+	position: relative;
+
+	.g-button__read
+	{
+		
+		font-size: 14px;
+		margin-left: 1px;
+	}
+	.subscription__g-input-search
+	{
+		margin: 0 10px;
+	}
+	.g-input-header-search{
+		
+		border-radius: 5px;
+		border: 1px solid #DFE0E1;
+		width: 399px;
+		height: 36.4px;
+		padding-left: 19px;
+		font-size: 14px;
+	}
+
+	p
+	{
+	    display: block;	
+		font-size: 18px;
+		margin-right: 17px;
+		font-weight: 500;
+		color: rgb(255, 255, 255);
+		margin: 0 0 0 0;
+		z-index: 2;
+		
+
+	}
+
+	&__background-svg
+	{
+	background: url(#{$svg}/Vector-subscription.svg) no-repeat;
+	width: 68.5px;
+	height: 30.5px;
+	position: absolute;
+	top: 38px;
+	left: 101px;
+	z-index: 1 ;
+
+	}
+}
