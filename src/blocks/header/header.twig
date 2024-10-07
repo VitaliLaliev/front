@@ -6,15 +6,25 @@
 			<a href=""> <img src="./svg/box.svg" alt=""> Доставка и оплата </a>
 			<a href=""> <img src="./svg/pointer.svg" alt=""> Адрес и часы работы </a>
 		</div>
+		{# **************** НАЧАЛО выподаюший список для desktop ************************* #}
+
+		<select class="header__address-desktop" name="pets" id="pet-select">
+			<option value="">Адрес и доставка</option>
+			<option value="Location"><a href=""> Москва </a></option>
+			<option value="box"><a href=""> Доставка и оплата </a></option>
+			<option value="pointer"><a href=""> Адрес и часы работы </a></option>
+		</select>
+		{# **************** КОНЕЦ выподаюший список для desktop ************************* #}
+
 		<div class="header__contact-information">
 			<a href=""> <img src="./svg/letter.svg" class="header__email" alt=""> market@estatut.ru </a>
-			
-			<a href="8(968)660-65-50" class="header__nunber" >
-				 <img src="./svg/telephone-receiver.svg"  alt=""> 
-				8 (968) 660-65-50 
-				<img src="./svg/notification.svg" alt=""> 
+
+			<a href="8(968)660-65-50" class="header__nunber">
+				<img src="./svg/telephone-receiver.svg" alt="">
+				8 (968) 660-65-50
+				<img src="./svg/notification.svg" alt="">
 			</a>
-			
+
 		</div>
 	</div>
 	<div class="horizontal-line"></div>
@@ -33,12 +43,15 @@
 						type="search">
 					<button class="g-button-and-icon-search"><img src="./svg/search.svg" alt=""> Искать</button>
 				</label>
+
 			</div>
 
 			<div class="nav__navigation-menu-search">
 				<a href=""> <img src="./svg/deferred-icon.svg" alt=""> Отложено </a>
 				<a href=""> <img src="./svg/Login.svg" alt="">Войти</a>
-				<a href="" class="nav__container "> <div></div><img src="./svg/shopping-cart.svg" alt=""> Корзина </a>
+				<a href="" class="nav__container ">
+					<div></div><img src="./svg/shopping-cart.svg" alt=""> Корзина
+				</a>
 			</div>
 
 		</div>
@@ -49,7 +62,39 @@
 			<a href=""><img src="./svg/discounts.svg" alt="">Скидки</a>
 			<a href=""><img src="" alt="">Партнёрам</a>
 			<a href=""><img src="" alt="">Мы</a>
+
 		</div>
 	</nav>
-
 </header>
+
+	{# ////////////////////***************** НАЧАЛО МОБИЛЬНОЙ ВЕРСИИ  (начиная от 686px) *****************\\\\\\\\\\\\\\\\\\\\\\\ #}
+
+	<div class="mobile">
+		 
+		<div class="mobile__header">
+					<img class="mobile__catalog-svg" src="./svg/catalog.svg" alt="">
+
+					<div class="nav__container-logo">
+						<img src="./svg/logo.svg" alt="" class="nav__logo">
+					</div>
+
+					<label class="g-input-search">
+						<input name="search" class="g-input-header-search" placeholder="Что будем искать?"
+							type="search">
+						<button class="g-button-and-icon-search-mobile"><img src="./svg/grey-search.svg"
+								alt=""></button>
+					</label>
+
+					<div class="nav__container-mobile "><img src="./svg/shopping-cart.svg" alt="">
+						<div class="nav__container-mobile__specify">
+							<p>10</p>
+						</div>
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+	</div>
+
+	{# ////////////////////***************** КОНЕЦ МОБИЛЬНОЙ ВЕРСИИ *****************\\\\\\\\\\\\\\\\\\\\\\\ #}
+
+
+

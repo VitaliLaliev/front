@@ -18,6 +18,10 @@
 
 	&__address a {@include style-navigation-button(#1C294DCC, 400, );}
 
+	&__address-desktop
+	{
+		display: none;
+	}
 
 	&__contact-information 
 	{
@@ -47,28 +51,37 @@ nav
 }
 .nav__container-logo
 {
+	flex-grow: 1;
 	padding-top: 5px;
 }
 	.nav__navigation-menu-search
 	 {
 		display: flex;
 		align-items: center;
+		flex-grow: 1;
+		justify-content: flex-end;
 	}
-
+	
 	.nav__navigation-menu-search a:not(:first-child) {margin-left: 30px;}
-
 	.nav__navigation-menu-search a {@include style-navigation-button(#1C294D, 400, );}
 	.nav__navigation-menu-search a img {width: 20px;}
+
 	.g-input-search 
 	{
 		@extend %alignment-line;
 		margin-left: 30px;
-		position: relative;
+		flex: 2 1 436px;
+		min-width: 220px;
+		
+		.g-input-header-search
+		{
+		width: 100%;	
+		}
 
 		button 
 		{
-		position: absolute;
-		right: -119px;
+		
+		
 		}
 	}
 	.nav__navigation-menu {display: flex;}

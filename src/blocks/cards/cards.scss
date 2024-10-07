@@ -2,197 +2,216 @@
 .cards
  {
 	font-family: 'roboto';
-	
 	display: flex;
 	margin-top: 8px;
+	margin-inline: -15px;
+
 	
 	p
 	{
 		margin-top: 0;
 		margin-bottom: 0;
 	}
+	
+	.border_cards:first-child
+		{
+			border-left: none;
+			border-right: none ;
 }
 
-.product-card
- {
-	position: relative;
-	margin: 0 auto -7px auto;
+.border_cards
+{
+	border: 2px solid #e1e0df;
+	border-right: none;
+	padding: 25px 0 21px 0;
+	display: flex;
+	flex-grow: 1;
+	margin: 0 auto;
+}
 
-	&__title
-	 {
-		font-size: 12px;
-		color: rgba(28, 41, 77, 0.5);
-	}
-
-	&__info
-	{
-		margin: 0 0 8px 0	;
-
-	}
-	&__description
-	 {
-		// font-family: Roboto;
-		line-height: 1.3;
-		font-weight: 500;
-		font-size: 14px;
-		color: rgb(28, 41, 77);
-		padding-top: 7px;
-	}
-
-	&__author
-	 {
-		line-height: 2.1;
-		font-size: 12px;
-		color: rgb(28, 41, 77, 1);
-		padding-top: 5px;
-	}
-
-	&__price-and-discount
-	 {
-		display: flex;
-		align-items: center;
-		position: relative;
-		margin-bottom: 5px;
-
-		img{
-			position: absolute;
-			top: 12px;
-			left: 49px;
-		
-		}
-
-	}
-
-	&__price
-	{
-	   font-size: 18px;
-	   font-weight: 700;
-	   color: rgba(28, 41, 77, 1);
-   }
-   &__price-color-red
-   {
-	font-size: 18px;
-	   font-weight: 700;
-	   color: rgba(253, 58, 58, 1);
-   }
-	&__discount
-	{
-		font-size: 12px;
-		color: rgba(28, 41, 77, 0.5);
-	}
-
+}
+			
+			.product-card
+			{
+				position: relative;
+				margin: 0 auto -7px auto;
+				
+				&__title
+				{
+					font-size: 12px;
+					color: rgba(28, 41, 77, 0.5);
+				}
+				
+				&__info
+				{
+						margin: 0 34px 8px 34px;
+					
+					
+				}
+				&__description
+				{
+					// font-family: Roboto;
+					line-height: 1.3;
+					font-weight: 500;
+					font-size: 14px;
+					color: rgb(28, 41, 77);
+					padding-top: 7px;
+				}
+				
+				&__author
+				{
+					line-height: 2.1;
+					font-size: 12px;
+					color: rgb(28, 41, 77, 1);
+					padding-top: 5px;
+				}
+				
+				&__price-and-discount
+				{
+					display: flex;
+					align-items: center;
+					position: relative;
+					margin-bottom: 5px;
+					
+					img{
+						position: absolute;
+						top: 12px;
+						left: 49px;
+						
+					}
+					
+				}
+				
+				&__price
+				{
+					font-size: 18px;
+					font-weight: 700;
+					color: rgba(28, 41, 77, 1);
+				}
+				&__price-color-red
+				{
+					font-size: 18px;
+					font-weight: 700;
+					color: rgba(253, 58, 58, 1);
+				}
+				&__discount
+				{
+					font-size: 12px;
+					color: rgba(28, 41, 77, 0.5);
+				}
+				
 	&__favorable
 		{
 			color: rgba(13, 185, 140, 1);
 			font-size: 12px;
 		}
-
 		
 		
-	&__offer
-	 {
-		position: absolute;
-		top: -6px;
-		left: -19px;
-		width: 86px;
-		height: 25px;
-		text-align: center;
-		line-height: 25px;
-		border-radius: 5px;
-		color: rgba(172, 142, 227, 1);
-		background: rgba(238, 233, 247, 1);
-		font-size: 12px;
-	}
-
-	&__promotion
-	 {
-		position: absolute;
-		top: 29px;
-		left: -18px;
-		width: 54px;
-		height: 25px;
-		line-height: 25px;
-		text-align: center;
-		font-size: 12px;
-		border-radius: 5px;
-		color: rgba(255, 79, 82, 1);
-		background: rgba(255, 238, 238, 1);
-
-	}
-
-	&__offer-color
-	 {
-		position: absolute;
-		top: -5px;
-		width: 70px;
-		height: 25px;
-		line-height: 25px;
-		text-align: center;
-		font-size: 12px;
-		border-radius: 5px;
-		color: rgba(61, 196, 126, 1);
-		background: rgba(226, 246, 236, 1);
-	}
-
-	&__image
-	 {
-		display: block;
-    margin: -2px auto 14px auto;
 		
-		
-	}
-
-
-	&__grade-and-recommend
-	 {
-		display: flex;
-		margin-bottom:12px;
-
-
-		&__grade-star-yellow
-		 {
-			@extend %grade-and-star-svg;
-			background: rgba(251, 192, 45, 0.3);
-			margin-right: 10px;
-
-			p
-			 {
-				color: rgba(251, 192, 45, 1);
-				font-size: 12px;
-				margin: 0 auto 0 0;
-				line-height: 25px;
-
-			}
-
-			img
-			 {
-				margin-left: auto;
-
-			}
+		&__offer
+		{
+			position: absolute;
+			top: -5px;
+			left: 35px;
+			width: 86px;
+			height: 25px;
+			text-align: center;
+			line-height: 25px;
+			border-radius: 5px;
+			color: rgba(172, 142, 227, 1);
+			background: rgba(238, 233, 247, 1);
+			font-size: 12px;
 		}
-
-		&__grade-star-orange
-		 {
-			@extend %grade-and-star-svg;
-			background: rgba(255, 163, 77, 0.3);
-			margin-right: 10px;
-
-			.product-card__grade-p
-			 {
-				color: rgba(255, 163, 77, 1);
-				font-size: 12px;
+		
+		&__promotion
+		{
+			position: absolute;
+			top: 31px;
+    		left: 35px;
+			width: 54px;
+			height: 25px;
+			line-height: 25px;
+			text-align: center;
+			font-size: 12px;
+			border-radius: 5px;
+			color: rgba(255, 79, 82, 1);
+			background: rgba(255, 238, 238, 1);
+			
+		}
+		
+		&__offer-color
+		{
+			position: absolute;
+			top: -5px;
+			width: 70px;
+			height: 25px;
+			line-height: 25px;
+			text-align: center;
+			font-size: 12px;
+			border-radius: 5px;
+			color: rgba(61, 196, 126, 1);
+			background: rgba(226, 246, 236, 1);
+		}
+		
+		&__image
+		{
+			display: block;
+			margin: -2px auto 14px auto;
+			
+			
+		}
+		
+		
+		&__grade-and-recommend
+		{
+			display: flex;
+			margin-bottom:12px;
+			
+			
+			&__grade-star-yellow
+			{
+				@extend %grade-and-star-svg;
+				background: rgba(251, 192, 45, 0.3);
+				margin-right: 10px;
+				
+				p
+				{
+					color: rgba(251, 192, 45, 1);
+					font-size: 12px;
+					margin: 0 auto 0 0;
+					line-height: 25px;
+					
+				}
+				
+				img
+				{
+					margin-left: auto;
+					
+				}
+			}
+			
+			&__grade-star-orange
+			{
+				@extend %grade-and-star-svg;
+				background: rgba(255, 163, 77, 0.3);
+				margin-right: 10px;
+				
+				.product-card__grade-p
+				{
+					color: rgba(255, 163, 77, 1);
+					font-size: 12px;
 				margin: 0 auto 0 0;
 				line-height: 25px;
 			}
-
+			
 			.product-card__grade-svg
-			 {
+			{
 				margin-left: auto;
-
+				
 			}
-
+			
 		}
-
+		
 	}
 	&__recommend
 	{
@@ -202,7 +221,7 @@
 		height: 25px;
 		background-color: rgba(121, 134, 203, 0.3);
 		border-radius: 5px;
-
+		
 		p
 		{
 			font-size: 12px;
@@ -217,68 +236,21 @@
 			margin: 0 5px 0 auto ;
 		}
 	}
-
+	
 	// ************************** КНОПКИЙ **************************
-
+	
 	&__buy-button-and-deferred
-	 {
+	{
 		display: flex;
-
+		
 		.deferred-margin
-		 {
+		{
 			margin-left: 10px;
-
+			
 		}
-
-	}
-
-}
-
-
-.cards_border_none
- {
-	border: 2px solid #e1e0df;
-	border-left: none;
-	border-right: none;
-	padding: 25px 0 21px 0;
-	display: flex;
-	flex-grow: 1.2;
-	margin: 0 auto;
-	max-width: 277px;
-.product-card
-{
-
-	&__info	{margin: 0 31px 8px 0;}
-	&__author{margin-top: 1px;}
-	&__image 
-	{
-		margin: -2px auto 14px auto;
-		padding-right: 14px;
-	}
-	&__offer 
-	{
 		
-		position: absolute;
-		top: -6px;
-		left: 0px;
-
 	}
-	&__promotion
-	{
-		
-		position: absolute;
-		top: 31px;
-		left: 0px;
-	}
-}
+	
 }
 
-.border_cards
- {
-	border: 2px solid #e1e0df;
-	border-right: none;
-	padding: 25px 0 21px 0;
-	display: flex;
-	flex-grow: 1;
-	margin: 0 auto;
-}
+

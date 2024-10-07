@@ -8,6 +8,7 @@
 @import 'base/normalize';
 @import 'base/typography';
 @import 'base/default';
+@import 'base/media.scss';
 
 /* blocks */
 @import '@b/g-select/g-select.scss';
@@ -25,6 +26,8 @@
 @import '@b/subscription/subscription.scss';
 @import '@b/coming-soon/coming-soon.scss';
 @import '@b/get-discount/get-discount.scss';
+@import '@b/header/header-media.scss';
+
 
 /* @import 'blocks/component/component'; */
 
@@ -51,9 +54,9 @@ html
 	color: $mainFontColor;
 	-webkit-font-smoothing: antialiased;
 }
-body
-{
-	background-image: url(#{$img}/logo.png);
-	background-repeat: no-repeat;
+// body
+// {
+// 	background-image: url(#{$img}/logo.png);
+// 	background-repeat: no-repeat;
 	
-}
+// }

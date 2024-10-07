@@ -4,19 +4,96 @@
 &__container
 {
 	width: 1141px;
-	margin: 0 auto;
+	margin: 47px auto 0;
 	display: flex;
+	justify-content: flex-start;
 }
 ul 
 {
 	flex: 1 1 165px;
+	max-width: 195px;
 }
-ul :nth-child(1)
+&__style-title
 {
 	font-size: 14px;
 	font-weight: 500;
+	margin-bottom: 24px;
+	margin-top: 0;
+	text-decoration: none;
 	color: rgba(28, 41, 77, 1);
 	
 }
+
+&__style-text
+{
+	margin-bottom: 15px;
+	letter-spacing: -0.4px;
+	color: rgba(40, 47, 54, 0.8);
+	font-size: 14px;
+	text-decoration: none;
+}
+&__Phone-and-Email
+{
+	a 
+	{
+		@include style-navigation-button(rgba(40, 47, 54, 0.8), 400, );
+	}
+}
+&__Price-list
+{
+	a 
+	{
+		@include style-navigation-button(rgba(40, 47, 54, 0.8), 400, );
+	}
+	span 
+	{
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 15px;
+		text-align: left;
+		color: rgba(40, 47, 54, 0.5);
+	}
+
+}
+
+&__Price-list
+{
+	.footer__style-title
+	{
+		margin-bottom: 0;
+	}
+
+	.footer__style-text
+	{
+		line-height: 1.1;
+		padding: 17px 0 0 5px;
+	}
+	img 
+	{margin-right: 10px ;}
+}
+
+&__Phone-and-Email
+{
+	.footer__style-title
+	{
+		margin-bottom: 0;
+	}
+
+	.footer__style-text
+	{
+		margin: 0;
+		padding: 13px 0 0 0;
+	}
+	.footer__style-text-nunber
+	{
+		letter-spacing: -0.8px;
+    line-height: 0.1;
+    padding: 0 0 0 0;
+	}
+
+	img 
+	{margin-right: 10px ;}
+}
+
 
 }

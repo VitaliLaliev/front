@@ -4,7 +4,7 @@
 	src: url(#{$fonts}/roboto/roboto-Regular.ttf);
 	max-width: 1140px;
 	margin: 30px auto 0;
-	box-sizing:border-box;
+	box-sizing: border-box;
 
 	&__title
 	 {
@@ -31,25 +31,273 @@
 			justify-content: flex-end;
 			margin-right: 25px;
 			margin-top: 9px;
-	
+
 		}
 	}
 
 	&__show-all
-	{
-		width: 1140px;
+	 {
 		text-align: center;
-
 	}
 
 	&__show-all-button
-	{
-		
+	 {
+
 		margin-top: 9px;
 		font-size: 14px;
 		font-weight: 500;
 		color: rgba(28, 41, 77, 1);
 		border: none;
-		
+
+	}
+
+
+}
+
+
+//_______________________________________________________________//  НАЧАЛО АДАПТИВА "1070px"  \\_______________________________________________________________
+
+.card-hide-2
+ {
+	@include media-display-none (1070.11px)
+}
+
+@include media (1070px) // изминил position: absolute; в 4 карточке
+
+	{
+	.new-arrivals
+	 {
+
+
+
+		.cards :nth-child(4)
+		 {
+
+			.product-card__offer
+			 {
+				top: -6px;
+       			 left: 19%;
+    
+
+			}
+
+			.product-card__promotion
+			 {
+				left: 19%;
+
+			}
+		}
+		.cards :nth-child(1)
+		 {
+
+			.product-card__offer
+			 {
+				top: -6px;
+       			 left: 19%;
+    
+
+			}
+
+			.product-card__promotion
+			 {
+				left: 19%;
+
+			}
+		}
+
+
 	}
 }
+
+//_______________________________________________________________//  КОНЕЦ АДАПТИВА "1070px"  \\_______________________________________________________________
+
+
+//*************************************************************************************************************************************************************
+
+
+//_______________________________________________________________//  НАЧАЛО АДАПТИВА "920px"  \\_______________________________________________________________
+
+
+
+.card-hide-1
+ {
+	@include media-display-none (920.11px)
+}
+.mobile-display-none
+{
+	@include media-display-none (920.11px)
+}
+.mobile-display-block
+{
+	@include media-min-display-none ( 920px)
+}
+
+@include media (920px) 
+
+	{
+	.new-arrivals
+	 {
+
+		.cards
+		 {
+			margin-inline: 11px;
+		}
+
+		margin-top: 28px;
+
+		&__title
+		 {
+			margin-bottom: -2px;
+		}
+
+		&__title h2
+		 {
+			padding: 0 0 0 20px;
+		}
+
+		&__title__button-Swipe
+		 {
+			margin-right: 20px;
+			margin-top: -11px;
+		}
+
+		.border_cards
+		{
+			width: 160px;
+		}
+		
+		.product-card
+
+		{
+		width: 100%;
+		&__grade-and-recommend 
+		{
+
+		   display: flex;
+		   margin-bottom: 8px;
+		   flex-direction: column;
+		   margin-top: -4px;
+		   gap: 9px;
+		}
+
+		&__image
+		 {
+			display: block;
+			margin: -5px auto 14px auto;
+			width: 126px;
+		}
+		
+		&__description 
+		{
+			line-height: 1.29;
+		}
+
+		&__info 
+		{
+			margin: 0 0 8px 9px;
+		}
+		
+
+		.cards :nth-child(4)
+		 {
+		
+			.product-card__info {
+				margin: 0 0 8px 9px;
+			
+			}
+			.product-card__recommend
+			{
+				display: none;
+			}
+			.product-card__buy-button-and-deferred
+		
+			{
+				margin-top: 43px;
+			}
+		}
+
+
+			.g-button__buy-button {
+				width: 117px;
+				height: 34px;
+
+		}
+		.g-button__buy-button div img {
+			width: 20px;
+			margin-right: 4px;
+		}
+
+		&__buy-button-and-deferred .deferred-margin {
+			margin-left: 5px;
+		}
+		
+		.g-button__deferred {
+			width: 35px;
+			height: 33px;
+		}
+	}
+
+		.new-arrivals__show-all-button 
+		{
+		    margin-top: 7px;
+		    padding-inline: 0 11px;
+		}
+	}
+}
+
+
+
+		
+
+
+//_______________________________________________________________//  КОНЕЦ АДАПТИВА "965px"  \\_______________________________________________________________
+
+
+
+//*************************************************************************************************************************************************************
+
+
+//_______________________________________________________________//  НАЧАЛО АДАПТИВА " "  \\_______________________________________________________________
+
+@include media (580px)
+{	
+	.new-arrivals 
+	{
+	.cards :nth-child(1)
+	{
+
+			.product-card__offer
+			{
+				top: -10px;
+				left: 5%;
+
+		   }
+
+		   .product-card__promotion
+			{
+				top: 25px;
+				left: 5%;
+
+		   }
+		}
+	
+		
+		.cards :nth-child(4)
+		{
+			.product-card__offer
+			{
+				top: -10px;
+				left: 5%;
+			}
+			
+			.product-card__promotion
+			{
+				top: 25px;
+				left: 5%;
+			}
+			
+		}
+	}
+
+}
+//_______________________________________________________________//  КОНЕЦ АДАПТИВА " "  \\_______________________________________________________________

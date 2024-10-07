@@ -1,182 +1,493 @@
-.recommendations 
+.recommendations
+
 {
+	font-family: 'roboto';
 	max-width: 1140px;
 	margin: 49px auto 0;
 	display: flex;
 
-	&__offer 
+	&__offer
+	
 	{
 		max-width: 750px;
 	}
 
-	&__offer__delivery-and-discount 
+	&__delivery-and-discount
+	
 	{
 		display: flex;
 		align-items: center;
+	}
 
-		&__delivery 
+	&__delivery
+	
+	{
+		width: 360px;
+		height: 140px;
+		border-radius: 5px;
+		background-color: #6D378F;
+		margin-top: 23px;
+
+	}
+
+	&__vector
+	
+	{
+		@extend %alignment-line;
+		padding-left: 10px;
+		padding-top: 23px;
+		padding-bottom: 7px;
+		background: url(#{$img}/Vector.png) no-repeat;
+		background-position: 13px 32px;
+
+
+		p
+		
 		{
-			width: 360px;
-			height: 140px;
-			border-radius: 5px;
-			background-color: #6D378F;
-			margin-top: 23px;
 
-
-			&__vector 
-			{
-				@extend %alignment-line;
-				padding-left: 10px;
-				padding-top: 23px;
-				padding-bottom: 7px;
-				background: url(#{$img}/Vector.png) no-repeat;
-				background-position: 13px 32px;
-
-
-				p 
-				{
-
-					color: #ffff;
-					letter-spacing: 0.5px;
-					font-size: 19px;
-					line-height: 1.3;
-					margin-bottom: 32px;
-					margin-left: 4px;
-				}
-
-				img 
-				{
-					margin-right: 15px;
-					margin-top: -9px;
-					margin-bottom: 17px;
-
-				}
-			}
+			color: #ffff;
+			letter-spacing: 0.5px;
+			font-size: 19px;
+			line-height: 1.3;
+			margin-bottom: 32px;
+			margin-left: 4px;
 		}
 
-		&__discount 
+		img
+		
 		{
-			width: 360px;
-			height: 140px;
-			border-radius: 5px;
-			background: #FFD8EF;
-			margin-top: 23px;
-			margin-left: 31px;
-
-
-			&__vector 
-			{
-				background: url(#{$svg}/Vector-discount.svg) no-repeat;
-				background-position: 45px 82px;
-				@extend %alignment-line;
-				padding-left: 9px;
-				padding-top: 21px;
-
-				p 
-				{
-
-					color: rgba(28, 41, 77, 0.8);
-					font-family: Gosha Sans;
-					font-size: 21px;
-					font-weight: 600;
-					text-align: left;
-					line-height: 1.27;
-					letter-spacing: 1px;
-					margin-left: 3px;
-					margin-bottom: 26px;
-
-				}
-
-				img 
-				{
-					margin-right: 15px;
-					margin-bottom: 17px;
-					margin-top: -4px
-				}
-			}
+			margin-right: 15px;
+			margin-top: -9px;
+			margin-bottom: 17px;
 
 		}
 	}
 
-	&__book 
+
+	&__discount
+	
 	{
-		max-width: 360px;
-		margin: 0 auto;
-		position: relative;
+		width: 360px;
+		height: 140px;
+		border-radius: 5px;
+		background: #FFD8EF;
+		margin-top: 23px;
+		margin-left: 31px;
 
-		.product-card__image 
-		{
-			margin: 65px auto 14px auto;
-			display: block;
-			padding-left: 30px;
-		}
+	}
 
-		.name_block
-		{
-			position: absolute;
-			top: -56px;
-    		left: 10px;
+	&__discount-vector
+	
+	{
+		background: url(#{$svg}/Vector-discount.svg) no-repeat;
+		background-position: 45px 82px;
+		@extend %alignment-line;
+		padding-left: 9px;
+		padding-top: 21px;
 
-		}
-
-		.product-card__timer
-		{
-			position: absolute;
-			top: -56px;
-			left: 262px;
-			font-size: 12px;
-			font-weight: 500;
-			color: rgb(255, 122, 0);
-			text-align: center;
-			line-height: 2.5;
-			width: 68px;
-			height: 25px;
-			background-color: rgba(255, 122, 0, 0.15);
-			border-radius: 5px;
-		}
-
-		.product-card__info
-		{
-			margin-left: 9px;
-		}
-
-		.product-card__title
-		{
-			margin-bottom: 0;
-		}
-
-		.product-card__description
-		{
-			letter-spacing: -0.4px;
-			margin-top: 5.5px;
-			margin-bottom: 0;
-			padding-top: 0;
-		}
-
-		.product-card__author
-		{
-			margin-top: 5.6px;
-			margin-bottom: 0;
-			padding-top: 0;
-		}
-
-		.product-card__price-and-discount
-		{
-			margin-bottom: 0;
-			margin-top: -9.5px;
-			font-weight: 700;
-		}	
-
-		.product-card__buy-button-and-deferred
-		{
-			margin-top: -7px;
-		}
+		p
 		
-		.g-button__buy-button div p 
 		{
-			margin-top: 0;
-			margin-bottom: 0;
+
+			color: rgba(28, 41, 77, 0.8);
+			font-family: Gosha Sans;
+			font-size: 21px;
+			font-weight: 600;
+			text-align: left;
+			line-height: 1.27;
+			letter-spacing: 1px;
+			margin-left: 3px;
+			margin-bottom: 26px;
+
+		}
+
+		img
+		
+		{
+			margin-right: 15px;
+			margin-bottom: 17px;
+			margin-top: -4px;
+		}
+	}
+
+	&__book
+	
+	{
+		max-width: 355px;
+		flex: 1 1 355px;
+		margin: 0 0 0 32px;
+
+	}
+
+
+	.card
+	
+	{
+		font-family: 'roboto';
+
+		.product-card
+		
+		{
+			.offer-book
+			
+			{
+				padding: 8px 18px 7px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+			}
+
+			&__image
+			
+			{
+				margin: 0 auto 15px auto
+			 }
+			&__timer
+			
+			{
+
+				font-size: 12px;
+				font-weight: 500;
+				color: rgb(255, 122, 0);
+				text-align: center;
+				line-height: 2.5;
+				width: 68px;
+				height: 25px;
+				background-color: rgba(255, 122, 0, 0.15);
+				border-radius: 5px;
+			}
+
+			&__info
+			
+			{
+				margin-left: 18px;
+			}
+
+			&__title
+			
+			{
+				margin-bottom: 0;
+			}
+
+			&__description
+			
+			{
+				margin-top: 5.5px;
+				margin-bottom: 0;
+				padding-top: 0;
+			}
+
+			&__author
+			
+			{
+				margin-top: 5.6px;
+				margin-bottom: 0;
+				padding-top: 0;
+			}
+
+			&__price-and-discount p
+			
+			{
+				margin-bottom: 12px;
+				margin-top: -0.6px;
+				font-weight: 700;
+				letter-spacing: 1px;
+			}
+
+			&__buy-button-and-deferred
+			
+			{
+				margin-top: -7px;
+			}
+
+			.g-button__buy-button div p
+			
+			{
+				margin-top: 0;
+				margin-bottom: 0;
+			}
 		}
 	}
 
 }
+
+
+//_______________________________________________________________//	НАЧАЛО АДАПТИВА  1200px \\_______________________________________________________________
+
+@include media (1200px)
+
+{
+	.recommendations
+	
+	{
+		margin-inline: 10px;
+		padding-inline: 5px;
+	}
+}
+//_______________________________________________________________//	КОНЕЦ АДАПТИВА  1200px \\_______________________________________________________________
+
+
+
+//*************************************************************************************************************************************************************
+
+
+//_______________________________________________________________//	НАЧАЛО АДАПТИВА  "desktop" \\_______________________________________________________________
+
+
+.recommendations__delivery-and-discount, .recommendations__book { @include media-display-none ($desktop) }
+
+.desktop__delivery-and-discount { @include  media-min-display-none (1024.11px) }
+
+@include desktop 
+{
+	.recommendations
+	{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		
+		.desktop__delivery-and-discount
+		{
+			display: flex;
+			flex-direction: row-reverse;
+			
+		}
+		.delivery-and-discount
+		{
+			display: flex;
+			flex-direction:column;
+			align-items: end;
+		}
+
+		&__delivery
+		{
+			height: 200px;
+			margin-top: 55px;
+			border-radius: 30px;
+			display: flex;
+			justify-content: center;
+		}
+		
+		&__vector {background-position: -1px 58px;}
+		
+		&__discount
+		{
+			height: 200px;
+			margin-top: 34px;
+			border-radius: 30px;
+			display: flex;
+			justify-content: center;
+		}
+		
+		&__discount-vector {background-position: 29px 115.5px;	}	
+	}	
+}
+
+//_______________________________________________________________//  КОНЕЦ АДАПТИВА  "desktop"  \\_______________________________________________________________
+
+
+
+//*************************************************************************************************************************************************************
+
+
+// _______________________________________________________________//  НАЧАЛО АДАПТИВА  "medium"  \\_______________________________________________________________
+
+@include medium 
+{
+
+	.recommendations
+	{
+		margin-top: 11px;
+        margin-inline: 4px;
+		box-sizing: border-box;
+
+		
+		&__slider
+		{
+			width: 100%;
+			padding-inline: 30px;	
+		}
+		
+		.desktop__delivery-and-discount {
+			display: flex;
+			flex-direction: column-reverse;
+			flex-wrap: nowrap;
+			width: 90%;
+			
+			.delivery-and-discount {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			
+		}
+		
+		
+		.card
+		{
+			.product-card
+			{
+				.offer-book { 
+					padding: 13px 38px 5px;
+						}
+						
+						&__image {
+							margin: 0 auto 15px auto;
+							border-radius: 5px;
+							width: 50%;
+							
+						}
+						
+						&__info
+						{
+							margin-left: 38px;
+						}
+						
+						.product-card__buy-button-and-deferred 
+						{
+							
+							.g-button__buy-button
+							{
+								flex-grow: 2;
+								min-width: 146px;
+							}
+							
+							.deferred-margin {
+								border-radius: 5px;
+								margin-right: 38px;
+								margin-left: 10px;
+							}
+						}
+					}
+				}
+				
+				&__delivery
+				{
+					width: 90%;
+					height: 140px;
+					border-radius: 5px;
+					display: flex;
+				}
+				
+				&__vector
+				{
+					width: 100%;
+					background-position: 0px 27px;
+					display: flex;
+					justify-content: space-between;
+				}
+				
+				&__discount 
+				{
+					width: 90%;
+					height: 140px;
+					border-radius: 5px;
+					display: flex;
+					margin-left: 0;
+				}
+				
+				&__discount-vector
+				{
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+				}
+				&__discount-vector 
+						{
+							   background-position:30px 86px;
+						}
+			}	
+		} 
+		//_______________________________________________________________//	КОНЕЦ АДАПТИВА  "medium , mobile "	\\_____________________________________________________
+		
+		
+
+		//*************************************************************************************************************************************************************
+
+		
+		//_______________________________________________________________//  НАЧАЛО АДАПТИВА "mobile"  \\_______________________________________________________________
+		
+@include media (425px)
+{
+	.recommendations
+	{
+		
+
+		&__slider
+		 {
+			padding-inline: 1px;
+			height: 174px;
+		}
+
+		.desktop__delivery-and-discount
+		{
+			width: 100%;
+		}
+		
+
+		.card
+		{
+			.product-card
+			{
+
+				&__image
+				{
+					margin: 0 auto 15px auto;
+					border-radius: 5px;
+					width: auto;
+					height: 201px;
+				}
+				&__info 
+				{
+					margin-left: 21px;
+				}
+				
+				.offer-book 
+				{
+					padding: 13px 21px 5px;
+				}
+
+				.product-card__buy-button-and-deferred
+				{
+
+					.deferred-margin {
+			
+						margin-right: -13px;
+					}
+				}
+				
+			}
+		}
+		&__discount-vector
+		{
+			padding-left: 17px;
+		}
+
+		&__delivery {
+			width: 355px;
+			margin-top: 29px;
+		}
+		&__vector
+		{
+			width: 97%;
+			margin-top: 8px;
+			background-position: 3px 24.7px
+		}
+
+		&__discount
+		{
+			margin-top: 10px;
+			width: 100%;
+		}
+	}
+
+}
+
+
+//_______________________________________________________________//  КОНЕЦ АДАПТИВА "mobile"  \\_______________________________________________________________
+
+
+
+

@@ -1,9 +1,9 @@
 <div class="recommendations">
 	<div class="recommendations__offer">
-		<img src="./img/slider.png" alt="slider">
-		<div class="recommendations__offer__delivery-and-discount">
-			<div class="recommendations__offer__delivery-and-discount__delivery">
-				<div class="recommendations__offer__delivery-and-discount__delivery__vector">
+		<img class="recommendations__slider" src="./img/slider.png" alt="slider">
+		<div class="recommendations__delivery-and-discount">
+			<div class="recommendations__delivery">
+				<div class="recommendations__vector">
 				<p> Бесплатно доставим <br>
 					ваш заказ при<br>
 					покупке от 2000 ₽</p>
@@ -11,8 +11,8 @@
 			</div>
 			</div>
 
-			<div class="recommendations__offer__delivery-and-discount__discount">
-				<div class="recommendations__offer__delivery-and-discount__discount__vector">
+			<div class="recommendations__discount">
+				<div class="recommendations__discount-vector">
 				<p> Скидка <br>
 					при регистрации <br>
 					до 15% 
@@ -24,8 +24,46 @@
 		</div>
 	</div>
 	<div class="recommendations__book">
+
  {% include '@blocks/cards/card.twig' %}
+</div>
+
+ 	{# ////////////////////***************** НАЧАЛО АДОПТИВНОЙ ВЕРСИИ  "desktop" *****************\\\\\\\\\\\\\\\\\\\\\\\ #}
+
+	 <div class="desktop__delivery-and-discount">
+		
+		<div class="delivery-and-discount">
+
+		<div class="recommendations__delivery">
+			<div class="recommendations__vector">
+			<p> Бесплатно доставим <br>
+				ваш заказ при<br>
+				покупке от 2000 ₽</p>
+			<img src="./img/delivery.png" alt="Logo">
+		</div>
+		</div>
+		<div class="recommendations__discount">
+			<div class="recommendations__discount-vector">
+			<p> Скидка <br>
+				при регистрации <br>
+				до 15% 
+				</p>
+				<img src="./img/discount.png" alt="Logo">
+			</div>
+		</div>
+
 	</div>
 
+		{% include '@blocks/cards/card.twig' %}
+	</div>
+
+{# ////////////////////***************** КОНЕЦ АДОПТИВНОЙ ВЕРСИИ  "desktop" *****************\\\\\\\\\\\\\\\\\\\\\\\ #}
+
+	{# ////////////////////***************** НАЧАЛО АДОПТИВНОЙ ВЕРСИИ  "desktop" *****************\\\\\\\\\\\\\\\\\\\\\\\ #}
+
+	{# ////////////////////***************** КОНЕЦ АДОПТИВНОЙ ВЕРСИИ  "desktop" *****************\\\\\\\\\\\\\\\\\\\\\\\ #}
+
+	{# ////////////////////***************** НАЧАЛО МОБИЛЬНОЙ ВЕРСИИ  (начиная от 686px) *****************\\\\\\\\\\\\\\\\\\\\\\\ #}
+	{# ////////////////////***************** КОНЕЦ МОБИЛЬНОЙ ВЕРСИИ  (начиная от 686px) *****************\\\\\\\\\\\\\\\\\\\\\\\ #}
 	
 </div>
