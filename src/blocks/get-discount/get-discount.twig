@@ -1,13 +1,21 @@
-<div class="get-discount">
+<div class="get-discount get-discount-mobile-dl-none">
 	<div class="get-discount__container">
 <div class="get-discount__logo">
  <img src="./svg/logo.svg" alt="">
 </div>
  <label class="g-input-search">
-	<input name="search" class="g-input-header-search" placeholder="Введите свой Email и получите скидку"
+	<input name="search" class="g-input-header-search input-medium-dl-none" placeholder="Введите свой Email и получите скидку"
 		type="search">
+
+{# _______________________________________________________________//  НАЧАЛО АДАПТИВА " 965px"  \\_______________________________________________________________ #}
+
+<input name="search" class="g-input-header-search input-medium-dl-block" placeholder="Подписаться на рассылку" type="search">
+{# _______________________________________________________________//  КОНЕЦ АДАПТИВА "965px"  \\_______________________________________________________________ #}
+
+
 	<button class="g-button-and-icon-search"><img src="./svg/telegram.svg" alt=""></button>
 </label>
+
 <div class="get-discount__social-network">
 <a href="#"><img src="./svg/facebook.svg" alt=""></a>
 <a href="#"><img src="./svg/Instagram.svg" alt=""></a>
@@ -15,3 +23,36 @@
 </div>
 </div>
 </div>
+
+
+{# _______________________________________________________________//  НАЧАЛО АДАПТИВА " 576px"  \\_______________________________________________________________ #}
+
+<div class="get-discount get-discount-mobile-dl-block">
+<div class="get-discount__container">
+	
+	<div class="get-discount__social-network">
+		<a href="#"> {% include '@assets/svg/facebook-2.svg'%}  </a>
+		<a href="#"> {% include '@assets/svg/vk.svg'%} </a>
+		<a href="#"> {% include '@assets/svg/Instagram-2.svg'%}   </a>
+	</div>
+	
+	<div class="get-discount__logo-and-search">
+		
+		<div class="get-discount__logo">
+			<img src="./svg/logo.svg" alt="">
+		</div>
+		
+		<label class="g-input-search">
+			
+			<input name="search" class="g-input-header-search input-medium-dl-block" placeholder="Подписаться на рассылку" type="search">
+			
+			
+			<button class="g-button-and-icon-search"><img src="./svg/telegram.svg" alt=""></button>
+		</label>
+		
+	</div>
+	
+</div>
+</div>
+{# _______________________________________________________________//  КОНЕЦ АДАПТИВА "576px"  \\_______________________________________________________________ #}
+

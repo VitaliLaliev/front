@@ -1,15 +1,14 @@
 <footer class="footer">
 	<div class="footer__container">
 
-	<ul class="footer__buyers">
+	<ul class="footer__buyers block-list footer__mobile-bl-none">
 		<li class="footer__style-title"><a href="#">Покупателям</a></li>
 		<li class="footer__style-text"><a href="#"><p>Наша почта</p></a></li>
-		<li class="footer__style-text"><a href="#"><p>Оплата и доставка</p></a></li>
 		<li class="footer__style-text"><a href="#"><p>Оплата и доставка</p></a></li>
 		<li class="footer__style-text"><a href="#"><p>Вопросы и ответы</p></a></li>
 	</ul>
 
-	<ul class="footer__Publishing-house">
+	<ul class="footer__Publishing-house block-list footer__mobile-bl-none">
 		<li class="footer__style-title"><a href="#">Издательство</a></li>
 		<li class="footer__style-text"><a href="#"><p>О компании</p></a></li>
 		<li class="footer__style-text"><a href="#"><p>Авторам</p></a></li>
@@ -17,7 +16,7 @@
 		<li class="footer__style-text"><a href="#"><p>Контакты</p></a></li>
 	</ul>
 
-	<ul class="footer__Books">
+	<ul class="footer__Books block-list footer__mobile-bl-none">
 		<li class="footer__style-title"><a href="#">Книги</a></li>
 		<li class="footer__style-text"><a href="#"><p>Все категории</p></a></li>
 		<li class="footer__style-text"><a href="#"><p>Бестселлеры</p></a></li>
@@ -25,18 +24,104 @@
 		<li class="footer__style-text"><a href="#"><p>Скидки и акции</p></a></li>
 	</ul>
 
-	<ul class="footer__Price-list">
+{# _______________________________________________________________//  НАЧАЛО АДАПТИВА  " mobile"  \\_______________________________________________________________ #}
+
+<select  class="footer__buyers block-list footer__mobile-bl-block" name="" id=" ">
+
+<option> <a href="#">Покупателям</a> </option>
+<option> <a href="#"><p>Наша почта</p></a> </option>
+<option> <a href="#"><p>Оплата и доставка</p></a> </option>
+<option> <a href="#"><p>Оплата и доставка</p></a> </option>
+<option> <a href="#"><p>Вопросы и ответы</p></a> </option>
+
+</select>
+
+<select class="footer__Publishing-house block-list footer__mobile-bl-block" name="" id="">
+
+	<option> <a href="#">Издательство</a> </option>
+	<option> <a href="#"><p>О компании</p></a> </option>
+	<option> <a href="#"><p>Авторам</p></a> </option>
+	<option> <a href="#"><p>Вакансии</p></a> </option>
+	<option> <a href="#"><p>Контакты</p></a> </option>
+
+</select>
+
+<select class="footer__Books block-list footer__mobile-bl-block" name="" id="">
+	
+	<option> <a href="#">Книги</a> </option>
+	<option> <a href="#"><p>Все категории</p></a> </option>
+	<option> <a href="#"><p>Бестселлеры</p></a> </option>
+	<option> <a href="#"><p>Новинки</p></a> </option>
+	<option> <a href="#"><p>Скидки и акции</p></a> </option>
+	
+</select>
+	
+<select class="footer__Price-list block-list footer__mobile-bl-block" name="" id="">
+		
+		<option><a href="#">Прайс-лист</a></option>
+		<option  class="price-list-img">
+			<a href="./../../files-for-download/file-Price-list.pdf"  download="Price-list"> 
+				{# <img src="./svg/file.svg" alt="" width="20" height="20"> #}
+				<p>Скачать прайс-лист <br> <span>PDF, 12 Mb </span> </p> 
+			</a>
+		</option>
+	
+	</select>
+	<div class="footer__contract footer__mobile-bl-block">
+		<p>Политика конфиденциальности</p>
+	
+		<p>Договор оферты</p>
+	</div>
+{# _______________________________________________________________//  КОНЕЦ  АДАПТИВА  " mobile "  \\_______________________________________________________________ #}
+
+
+	<ul class="footer__Price-list block-list footer__mobile-bl-none">
 		<li class="footer__style-title"><a href="#">Прайс-лист</a></li>
 		<li class="footer__style-text"><a href="./../../files-for-download/file-Price-list.pdf" download="Price-list"> 
 			<img src="./svg/file.svg" alt=""><p>Скачать прайс-лист <br> <span>PDF, 12 Mb </span></p></a>
 		</li>
 	</ul>
 	
-	<ul class="footer__Phone-and-Email">
+	<ul class="footer__Phone-and-Email block-list  footer__mobile-bl-none">
 		<li class="footer__style-title"><a href="#">Телефон и Email</a></li>
-		<li class="footer__style-text"><a href="#"> <img src="./svg/letter.svg" alt=""> <p> market@estatut.ru</p></a></li>
-		<li class="footer__style-text-nunber"><a href="#"> <img src="./svg/telephone-receiver.svg" alt=""> <p>  8 (968) 660-65-50 </p></a></li>
+
+		<li class="footer__style-text"><a href="#"> 
+			<img src="./svg/letter.svg" alt=""> 
+			<p> market@estatut.ru</p></a></li>
+			
+		<li class="footer__style-text-nunber"><a href="#">
+			 <img src="./svg/telephone-receiver.svg" alt="">
+			  <p>  8 (968) 660-65-50 </p></a></li>
 	</ul>
 
+	{# _______________________________________________________________//  НАЧАЛО АДАПТИВА  " mobile"  \\_______________________________________________________________ #}
+
+	<a href="8(968)660-65-50" class="footer__nunber block-list footer__mobile-bl-block">
+		 <img src="./svg/telephone-receiver.svg" alt=""> <p>8 (968) 660-65-50 </p><img class="footr__notification" src="./svg/notification.svg" alt=""></a>
+
+	<a class=" footer__emil block-list footer__mobile-bl-block" href="#"> <img src="./svg/letter.svg" alt=""> <p> market@estatut.ru</p></a>
+</div>
+{# _______________________________________________________________//  КОНЕЦ  АДАПТИВА  " mobile "  \\_______________________________________________________________ #}
+	
+	<div class="address-and-conditions footer__mobile-bl-none">
+<div  class="Publishing">
+	<p>© 2020 Издательство «Статут»</p>
+</div>
+
+<div class="info">
+	<p>ул. Лобачевского, 92, корп. 2 119454, г. Москва</p>
+	<p>Политика конфиденциальности</p>
+	<p>Договор оферты</p>
+</div>
+
 	</div>
+	
+	{# _______________________________________________________________//  НАЧАЛО АДАПТИВА  " mobile"  \\_______________________________________________________________ #}
+	
+	<div class="footer__address footer__mobile-bl-block">
+		<a href=""> <img src="./svg/Location-icons.svg" alt=""> <p> ул. Лобачевского, 92, корп. 2 119454, г. Москва </p></a>
+		<p class="footer__publishing-text">© 2020 Издательство «Статут»</p>
+	</div>
+	{# _______________________________________________________________//  КОНЕЦ  АДАПТИВА  " mobile "  \\_______________________________________________________________ #}
+	
 </footer>

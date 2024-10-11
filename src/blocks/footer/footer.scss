@@ -3,10 +3,11 @@
 
 &__container
 {
-	width: 1141px;
-	margin: 47px auto 0;
+	max-width: 1141px;
+	margin: 47px auto 58px;
 	display: flex;
 	justify-content: flex-start;
+	border-bottom: 1px solid #DFE0E1;
 }
 ul 
 {
@@ -31,6 +32,15 @@ ul
 	color: rgba(40, 47, 54, 0.8);
 	font-size: 14px;
 	text-decoration: none;
+
+	 
+	
+		svg
+		{
+			color: red;
+		}
+	
+
 }
 &__Phone-and-Email
 {
@@ -95,5 +105,257 @@ ul
 	{margin-right: 10px ;}
 }
 
+.address-and-conditions
+{
+	max-width: 1141px;
+	margin-bottom: 45px;
+	margin-inline: auto;
+	display: flex;
+	justify-content: space-between;
+
+	.Publishing
+		{
+			display: flex;
+			justify-content: flex-start;
+			
+			p
+			{
+		color: rgba(28, 41, 77, 0.5);
+		
+
+			}
+		}
+
+		.info
+		{
+			display: flex;
+			justify-content: space-between;
+			max-width: 729px;
+			flex-grow: 2;
+			letter-spacing: -0.4px;
+			
+
+		}
+	p
+	{
+		color: rgba(28, 41, 77, 0.8);
+		font-size: 14px;
+	
+	}
+}
+
+
 
 }
+
+
+//_______________________________________________________________//	НАЧАЛО АДАПТИВА  "1200px " \\_______________________________________________________________
+
+@include media (1200px)
+{
+	.footer
+	{
+		padding-inline: 20px;
+		
+		
+		&__container
+		{
+			flex-wrap: wrap;
+
+		}
+
+		.block-list
+		{
+			border-bottom: 1.5px solid #DFE0E1;
+		}
+	}
+
+	.address-and-conditions
+	{
+
+		p 
+		{
+			margin-right: 10px;
+		}
+	}
+
+}
+
+
+//_______________________________________________________________//	КОНЕЦ АДАПТИВА   " 1200px " \\_______________________________________________________________
+
+
+//*************************************************************************************************************************************************************
+
+
+//_______________________________________________________________//	НАЧАЛО АДАПТИВА  "mobile " \\_______________________________________________________________
+
+.footer__mobile-bl-none
+{
+	@include media-display-none (576.11px)
+}
+	// @include media-min-display-none ($mobile)
+	// {}
+.footer__mobile-bl-block
+{
+
+	@include media-min-display-none ($mobile)
+	
+}
+
+@include mobile
+{
+	.footer
+	{
+		padding-inline: 16px 19px;
+
+		p 
+		{
+			margin: 0;
+			
+		}
+		&__container
+		{
+			flex-direction: column;
+			border-bottom: none;
+			margin: 3px auto 16px;
+
+			.block-list
+			{
+				border: none;
+				border-bottom: 1px solid #DFE0E1;
+				height: 61px;
+				letter-spacing: -0.4px;
+
+			}
+			.block-list:nth-child(1)
+			{
+				a
+				{
+					color: rgba(42, 61, 72, 1);
+				}
+			}
+
+			.Price-list-img
+			{
+				background-image: url(#{$svg}/file.svg);
+			background-position: 4px 1px ;
+			}
+			
+		}
+
+		&__Phone-and-Email
+		{
+
+			p 
+			{
+				color: rgba(28, 41, 77, 1)
+			}
+		}
+	
+		.footer__contract
+		{
+			border-bottom: 1px solid #DFE0E1;
+			height: 90px;
+				font-size: 14px;
+				color: rgba(28, 41, 77, 0.5);
+				padding: 22px 0 0 4px;
+
+				p:nth-child(2)
+				{
+					padding-top: 6px;
+				}
+		}
+		
+		&__nunber
+		{
+			display: flex;
+			align-items: center;
+			border-bottom: 1px solid #DFE0E1;
+			
+			p 
+			{
+				font-size: 14px;
+				letter-spacing: -0.9px;
+			}
+			
+			img:nth-child(1)
+			{
+				margin: 0 5px 0 5px;
+			}
+			
+			
+		}
+		
+		
+		.footr__notification
+		{
+			margin: 1px 0 0 7px;
+		}
+
+		&__emil
+		{
+			display: flex;
+			align-items: center;	
+			border-bottom: 1px solid #DFE0E1;
+
+			img
+			{
+				margin: 0 5px 0 5px;
+			}
+			
+			p 
+			{
+				font-size: 14px;
+				
+			}
+		}
+
+		&__address
+		{
+	
+			a 
+			{
+				display: flex;
+				align-items: flex-end;
+				p 
+				{ 
+					letter-spacing: -1.5px;
+					padding: 3px 0 0 3px;
+				}
+				img 
+					{
+						padding: 3px 0 0 4px;
+					}
+
+				}
+			}
+
+			&__publishing-text
+			{
+				font-size: 14px;
+				color: rgba(28, 41, 77, 0.5);
+				padding: 39px 0 0 3px;
+				letter-spacing: -0.5px;
+			
+			}
+
+	}
+	
+
+}
+
+
+//_______________________________________________________________//	КОНЕЦ АДАПТИВА   " mobile " \\_______________________________________________________________
+
+
+//*************************************************************************************************************************************************************
+
+
+//_______________________________________________________________//	НАЧАЛО АДАПТИВА  "800px " \\_______________________________________________________________
+
+
+//_______________________________________________________________//	КОНЕЦ АДАПТИВА   " 800px " \\_______________________________________________________________
+
+
+//*************************************************************************************************************************************************************

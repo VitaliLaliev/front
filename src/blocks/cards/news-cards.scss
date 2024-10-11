@@ -1,7 +1,7 @@
 .news
 {
 	font-family: 'roboto';
-	width: 1141px;
+	max-width: 1141px;
 	margin: 27px  auto;
 box-sizing: border-box;
 	p { margin: 0 0 0 0; }
@@ -100,6 +100,103 @@ box-sizing: border-box;
 	margin-top:10px;
 	width: 180px;
 	letter-spacing: -1px;
+}
+}
+
+
+//_______________________________________________________________//	НАЧАЛО АДАПТИВА  "1295px" \\_______________________________________________________________
+
+.news__border_cards:nth-child(2)
+	{
+		@include media-display-none (1295.11px)
+	}
+
+@include media (1295px)
+{
+	.news
+	{
+		
+
+		&__border_cards
+		{	
+			display: flex;
+				max-width: 538px;
+				width: 100% ;
+			margin-inline: 1px;
+		}
+
+		&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		
+		img 
+		{
+			width: 100%;
+		}
+	}
+	.news .new-arrivals__title {
+		margin-bottom: 8px;
+		padding-inline: 10px;
+	}
+	&__border_cards:nth-child(odd) .news__card {
+		
+		margin-inline: 50px;
+	}
+
+	}
 
 }
+
+//_______________________________________________________________//	КОНЕЦ АДАПТИВА   "1295px" \\_______________________________________________________________
+
+
+//*************************************************************************************************************************************************************
+
+
+//_______________________________________________________________//	НАЧАЛО АДАПТИВА  " mobile " \\_______________________________________________________________
+
+.news__border_cards:nth-child(3)
+{
+	@include media-display-none ($mobile)
 }
+@include mobile ()
+{
+
+	.news 
+	{
+		margin-top: 37px;
+		
+		&__border_cards:nth-child(odd) .news__card 
+		{
+			margin-inline: 18px;
+		}
+
+		&__card img 
+		{
+			width: 100%;
+			margin-bottom: 7px;
+		}
+
+		&__description-text {
+			// line-height: 1.3;
+		}
+	}
+
+	.news .news__card 
+	{
+		margin: 17px 35px;
+	}
+
+	.news__border_cards:nth-child(1) 
+	{
+		border-left: none;
+		border-right: none;
+		margin-right: 0px;
+	}
+}
+
+//_______________________________________________________________//	КОНЕЦ АДАПТИВА   " mobile " \\_______________________________________________________________
+
+
